@@ -22,7 +22,7 @@ body{
 }
 
 .clock{
-    cursor: grab;
+    cursor: help;
     font-family: 'Karla', sans-serif;
     font-weight: bold;
     font-size: 30px;
