@@ -41,3 +41,30 @@ function makeDraggable(element) {
         document.onmousemove = null;
     }
 }
+
+function rotateClockHands() {
+    const now = new Date();
+    const hour = now.getHours() % 12;
+    const minute = now.getMinutes();
+    const second = now.getSeconds();
+
+    const hourHand = document.getElementById("hour-hand");
+    const minuteHand = document.getElementById("minute-hand");
+    const secondHand = document.getElementById("second-hand");
+
+    // Calculate angles for rotation
+    const hourAngle = (hour * 30) + (0.5 * minute); // 30 degrees per hour, 0.5 degrees per minute
+    const minuteAngle = (minute * 6) + (0.1 * second); // 6 degrees per minute, 0.1 degrees per second
+    const secondAngle = second * 6; // 6 degrees per second
+
+    // Apply rotation using CSS transform property
+    hourHand.style.transform = `translate(-50%, -100%) rotate(${hourAngle}deg)`;
+    minuteHand.style.transform = `translate(-50%, -100%) rotate(${minuteAngle}deg)`;
+    secondHand.style.transform = `translate(-50%, -100%) rotate(${secondAngle}deg)`;
+}
+
+// Update clock hands every second
+setInterval(rotateClockHands, 1000);
+
+// Initial call to rotate clock hands immediately
+rotateClockHands();
