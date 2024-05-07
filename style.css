@@ -36,7 +36,7 @@ body{
 .note-here{
     font-family: "Lucida Handwriting";
     font-weight: bold;
-    position:absolute;
+    position:fixed;
     color:#321011;
     text-align: right;
     opacity: 50%;
