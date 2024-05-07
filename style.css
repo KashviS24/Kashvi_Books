@@ -79,10 +79,12 @@ body{
 .title1{
     transform: rotate(-90deg);
     position: absolute;
+    padding: 20px;
+    margin: 20px;
     width: 600px;
-    height: 100%;
-    left: 12%;
-    bottom: 2%;
+    height: 60px;
+    left: -315px;
+    bottom: 240px;
 }
 
 .author1{
@@ -94,10 +96,12 @@ body{
 .title2{
     transform: rotate(-90deg);
     position: absolute;
-    width: 700px;
-    height: 100%;
-    left: 25%;
-    bottom: 2%;
+    padding: 20px;
+    margin: 20px;
+    width: 650px;
+    height: 60px;
+    left: -320px;
+    bottom: 265px;
 }
 
 .author2{
@@ -109,10 +113,12 @@ body{
 .title3{
     transform: rotate(-90deg);
     position: absolute;
+    padding: 20px;
+    margin: 20px;
     width: 650px;
-    height: 100%;
-    left: 32%;
-    bottom: 2%;
+    height: 60px;
+    left: -320px;
+    bottom: 270px;
 }
 
 .author3{
@@ -124,10 +130,12 @@ body{
 .title4{
     transform: rotate(-90deg);
     position: absolute;
-    width: 550px;
-    height: 100%;
-    left: 35%;
-    bottom: 2%;
+    padding: 20px;
+    margin: 20px;
+    width: 620px;
+    height: 60px;
+    left: -310px;
+    bottom: 260px;
 }
 
 .author4{
@@ -138,11 +146,13 @@ body{
 
 .title5{
     transform: rotate(-90deg);
-  position: absolute;
-  width: 600px;
-  height: 100%;
-  left: 15%;
-  bottom: 2%;
+    position: absolute;
+    padding: 20px;
+    margin: 20px;
+    width: 620px;
+    height: 60px;
+    left: -325px;
+    bottom: 255px;
 }
 
 .author5{
@@ -232,7 +242,7 @@ body{
     bottom: 0;
     width: 60px;
     height: 550px;
-    left: 32.2%;
+    left: 385px;
 }
 
 .recitatif{
@@ -248,7 +258,7 @@ body{
     bottom: 0;
     width: 60px;
     height: 600px;
-    left: 41.5%;;
+    left: 500px;
 }
 
 .lover:hover{
@@ -276,7 +286,7 @@ body{
     transition-duration: 500ms;
    }
 
-@media (min-width: 1207px) { 
+/* @media (min-width: 1207px) { 
   .breath{
     transform: rotate(-1deg)
   }
@@ -387,7 +397,7 @@ body{
     transform: rotate(-12deg);
     left: 548px;
   }
-}
+} */
 
 .container {
     position: absolute;
