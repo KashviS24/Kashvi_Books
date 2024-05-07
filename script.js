@@ -41,18 +41,3 @@ function makeDraggable(element) {
         document.onmousemove = null;
     }
 }
-
-// Add click event listener for displaying larger images
-document.querySelectorAll('.draggable-note-1').forEach(function(note) {
-    note.addEventListener('click', function() {
-        if (!isDragging) { // Check if element is being dragged
-            var largeSrc = note.getAttribute('data-src-large');
-            var largeImage = new Image();
-            largeImage.src = largeSrc;
-            largeImage.onload = function() {
-                var w = window.open("");
-                w.document.write('<img src="' + largeSrc + '" width="100%">');
-            };
-        }
-    });
-});
