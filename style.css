@@ -1,3 +1,121 @@
 body{
     background-color: #FFF7EA;
 }
+
+.title1{
+    transform: rotate(-90deg);
+    position: absolute;
+    width: 600px;
+    height: 100%;
+    left: 40%;
+    bottom: 2%;
+}
+
+.author1{
+    font-size: 14px;
+    position: absolute;
+    left: 12%;
+}
+
+.title2{
+    transform: rotate(-90deg);
+    position: absolute;
+    width: 700px;
+    height: 100%;
+    left: 40%;
+    bottom: 2%;
+}
+
+.author2{
+    font-size: 14px;
+    position: absolute;
+    left: 24%;
+}
+
+.title3{
+    transform: rotate(-90deg);
+    position: absolute;
+    width: 650px;
+    height: 100%;
+    left: 40%;
+    bottom: 2%;
+}
+
+.author3{
+    font-size: 14px;
+    position: absolute;
+    left: 19%;
+}
+
+.title4{
+    transform: rotate(-90deg);
+    position: absolute;
+    width: 550px;
+    height: 100%;
+    left: 40%;
+    bottom: 2%;
+}
+
+.author4{
+    font-size: 14px;
+    position: absolute;
+    left: 27%;
+}
+
+.title5{
+    transform: rotate(-90deg);
+  position: absolute;
+  width: 600px;
+  height: 100%;
+  left: 40%;
+  bottom: 2%;
+}
+
+.author5{
+  font-size: 14px;
+  position: absolute;
+  left: 25%;
+}
+
+.lover{
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    position: absolute;
+    color: #791b1e;
+    background-color: #C8AB8C;
+    border: solid;
+    padding: 20px;
+    margin: 20px;
+    bottom: 0;
+    width: 60px;
+    height: 600px;
+}
+
+.crooked{
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    position: absolute;
+    color: #490327;
+    background-image: linear-gradient(180deg, #D593AF, #8E3A40);
+    border: solid;
+    padding: 20px;
+    margin: 20px;
+    bottom: 0;
+    width: 100px;
+    height: 700px;
+    left: 120.5px; 
+}
+
+.haifa{
+
+}
+
+.breath{
+
+}
+
+.recitatif{
+
+}
