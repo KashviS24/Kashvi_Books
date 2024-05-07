@@ -109,13 +109,98 @@ body{
 }
 
 .haifa{
-
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    position: absolute;
+    color: #ffffff;
+    background-color: #222657;
+    border: solid;
+    padding: 20px;
+    margin: 20px;
+    bottom: 0;
+    width: 60px;
+    height: 650px;
+    left: 273.5px;
 }
 
 .breath{
-
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    position: absolute;
+    color: #ffffff;
+    background-image: linear-gradient(180deg, #352122, #B73E2F);
+    border: solid;
+    padding: 20px;
+    margin: 20px;
+    bottom: 0;
+    width: 60px;
+    height: 550px;
+    left: 26.2%;
 }
 
 .recitatif{
-
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    position: absolute;
+    color: #2e2d2d;
+    background-image: linear-gradient(180deg, #E6D386, #80754B);
+    border: solid;
+    padding: 20px;
+    margin: 20px;
+    bottom: 0;
+    width: 60px;
+    height: 600px;
+    left: 34.5%;
 }
+
+.about{
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    position: absolute;
+    color: #f4d2d7;
+    background-color: #7975A3;
+    border: solid;
+    padding: 15px;
+    padding-bottom: 20px;
+    margin: 20px;
+    bottom: 0;
+    width: 300px;
+    height: 300px;
+    right: 10px;
+}
+
+.description{
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: normal;
+  }
+
+.lover:hover{
+    transform: scale(1.05);
+    transition-duration: 500ms;
+   }
+   
+.crooked:hover{
+    transform: scale(1.05);
+    transition-duration: 500ms;
+   }
+   
+.haifa:hover{
+    transform: scale(1.05);
+    transition-duration: 500ms;
+   }
+   
+.breath:hover{
+    transform: scale(1.05);
+    transition-duration: 500ms;
+   }
+   
+.recitatif:hover{
+    transform: scale(1.05);
+    transition-duration: 500ms;
+   }
+
