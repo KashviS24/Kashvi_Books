@@ -1,3 +1,6 @@
+let isDragging = false;
+
+// Make images draggable
 document.querySelectorAll('.draggable-note-1').forEach(function(image) {
     makeDraggable(image);
 });
@@ -5,6 +8,7 @@ document.querySelectorAll('.draggable-note-1').forEach(function(image) {
 function makeDraggable(element) {
     let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
     element.onmousedown = dragMouseDown;
+    element.onmouseup = function() { isDragging = false; };
 
     function dragMouseDown(e) {
         e = e || window.event;
@@ -15,6 +19,7 @@ function makeDraggable(element) {
         document.onmouseup = closeDragElement;
         // call a function whenever the cursor moves:
         document.onmousemove = elementDrag;
+        isDragging = true;
     }
 
     function elementDrag(e) {
@@ -36,3 +41,18 @@ function makeDraggable(element) {
         document.onmousemove = null;
     }
 }
+
+// Add click event listener for displaying larger images
+document.querySelectorAll('.draggable-note-1').forEach(function(note) {
+    note.addEventListener('click', function() {
+        if (!isDragging) { // Check if element is being dragged
+            var largeSrc = note.getAttribute('data-src-large');
+            var largeImage = new Image();
+            largeImage.src = largeSrc;
+            largeImage.onload = function() {
+                var w = window.open("");
+                w.document.write('<img src="' + largeSrc + '" width="100%">');
+            };
+        }
+    });
+});
