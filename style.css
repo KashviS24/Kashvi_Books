@@ -271,7 +271,8 @@ body{
     bottom: 0;
     width: 60px;
     height: 550px;
-    left: 385px;
+    left: 390px;
+    transform: rotate(-3deg);
 }
 
 .recitatif{
@@ -288,7 +289,8 @@ body{
     bottom: 0;
     width: 60px;
     height: 600px;
-    left: 500px;
+    left: 525px;
+    transform: rotate(-10deg);
 }
 
 .lover:hover{
