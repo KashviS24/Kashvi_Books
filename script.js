@@ -89,6 +89,7 @@ function rotateClockHands(timeZone) {
 // Function to toggle background color based on time zone
 function toggleBackgroundColor(timeZone) {
     const backgroundColor = (timeZone === timeZone1) ? '#7975A3' : '#FFB23F';
+    clock.style.transition = 'background-color 0.5s ease';
     clock.style.backgroundColor = backgroundColor;
 }
 
@@ -98,3 +99,10 @@ const myHome = document.getElementById("myHome");
 myHome.addEventListener('click', function() {
     window.location.href = "index.html";
 });
+
+
+// Call the function to update background color initially
+updateBackgroundColor();
+
+// Update background color every minute
+setInterval(updateBackgroundColor, 60000);

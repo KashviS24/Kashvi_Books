@@ -3,13 +3,26 @@ body{
     overflow-y: hidden;
 }
 
+.info img{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 7em;
+    z-index: 1000;
+    cursor: help;
+}
+
 .home img{
+    position: absolute;
     top: 10px;
     border-radius: 50%;
     width: 10em;
+    z-index: 1000;
+    cursor: grab;
 }
 
 .clock{
+    cursor: grab;
     font-family: 'Karla', sans-serif;
     font-weight: bold;
     font-size: 30px;
