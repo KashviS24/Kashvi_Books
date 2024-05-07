@@ -126,9 +126,11 @@ myHome.addEventListener('click', function() {
     window.location.href = "index.html";
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const myInfo = document.getElementById("myInfo");
 
-// Call the function to update background color initially
-updateBackgroundColor();
-
-// Update background color every minute
-setInterval(updateBackgroundColor, 60000);
+    // Add click event listener
+    myInfo.addEventListener('click', function() {
+        window.location.href = "info.html";
+    });
+});
