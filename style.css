@@ -1,5 +1,5 @@
 body{
-    background-color: #FFF7EA;
+    background-color: #f4e7d3;
     overflow-y: hidden;
 }
 
@@ -27,7 +27,7 @@ body{
     font-weight: bold;
     font-size: 30px;
     position: fixed;
-    color: #f4d2d7;
+    color: #141313;
     background-color: #7975A3;
     border: solid;
     padding: 15px;
@@ -188,6 +188,7 @@ body{
     font-size: 100px;
     position: absolute;
     color: #791b1e;
+    border-radius: 5px;
     background-color: #C8AB8C;
     border: solid;
     padding: 20px;
@@ -203,6 +204,7 @@ body{
     font-size: 95px;
     position: absolute;
     color: #490327;
+    border-radius: 5px;
     background-image: linear-gradient(180deg, #D593AF, #8E3A40);
     border: solid;
     padding: 20px;
@@ -219,6 +221,7 @@ body{
     font-size: 65px;
     position: absolute;
     color: #ffffff;
+    border-radius: 5px;
     background-color: #222657;
     border: solid;
     padding: 20px;
@@ -235,6 +238,7 @@ body{
     font-size: 67px;
     position: absolute;
     color: #ffffff;
+    border-radius: 5px;
     background-image: linear-gradient(180deg, #352122, #B73E2F);
     border: solid;
     padding: 20px;
@@ -251,6 +255,7 @@ body{
     font-size: 100px;
     position: absolute;
     color: #2e2d2d;
+    border-radius: 5px;
     background-image: linear-gradient(180deg, #E6D386, #80754B);
     border: solid;
     padding: 20px;

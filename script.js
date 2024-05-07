@@ -1,4 +1,4 @@
-let isDragging = false;
+let currentlyDraggedElement = null;
 
 // Make images draggable
 document.querySelectorAll('.draggable-note-1').forEach(function(image) {
@@ -8,18 +8,21 @@ document.querySelectorAll('.draggable-note-1').forEach(function(image) {
 function makeDraggable(element) {
     let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
     element.onmousedown = dragMouseDown;
-    element.onmouseup = function() { isDragging = false; };
+    element.onmouseup = function() { currentlyDraggedElement = null; };
 
     function dragMouseDown(e) {
         e = e || window.event;
         e.preventDefault();
+        // Set the currently dragged element
+        currentlyDraggedElement = element;
+        // Increase z-index to make the dragged element appear above others
+        element.style.zIndex = 1000;
         // get the mouse cursor position at startup:
         pos3 = e.clientX;
         pos4 = e.clientY;
         document.onmouseup = closeDragElement;
         // call a function whenever the cursor moves:
         document.onmousemove = elementDrag;
-        isDragging = true;
     }
 
     function elementDrag(e) {
@@ -36,11 +39,34 @@ function makeDraggable(element) {
     }
 
     function closeDragElement() {
+        // Reset z-index when dragging stops
+        element.style.zIndex = '';
+        // Clear the currently dragged element reference
+        currentlyDraggedElement = null;
         // stop moving when mouse button is released:
         document.onmouseup = null;
         document.onmousemove = null;
     }
 }
+
+// Add click event listener to all draggable elements
+document.querySelectorAll('.draggable-note-1').forEach(function(element) {
+    element.addEventListener('click', function() {
+        // Set the clicked element as the currently dragged element
+        currentlyDraggedElement = element;
+        // Increase z-index to make the clicked element appear above others
+        element.style.zIndex = 1000;
+    });
+});
+
+// Add a click event listener to the document to clear the currently dragged element
+document.addEventListener('click', function(e) {
+    // If the click is not on a draggable element, clear the currently dragged element
+    if (!e.target.classList.contains('draggable-note-1') && currentlyDraggedElement) {
+        currentlyDraggedElement.style.zIndex = '';
+        currentlyDraggedElement = null;
+    }
+});
 
 const timeZone1 = "America/New_York";
 const timeZone2 = "Asia/Kolkata";
