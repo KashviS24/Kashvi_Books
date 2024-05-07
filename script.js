@@ -42,11 +42,34 @@ function makeDraggable(element) {
     }
 }
 
-function rotateClockHands() {
+const timeZone1 = "America/New_York";
+const timeZone2 = "Asia/Kolkata";
+
+// Initialize the clock with the first time zone
+let currentTimeZone = timeZone1;
+rotateClockHands(currentTimeZone);
+
+// Add click event listener to the clock
+const clock = document.getElementById("clock");
+clock.addEventListener('click', function() {
+    // Toggle between time zones
+    currentTimeZone = (currentTimeZone === timeZone1) ? timeZone2 : timeZone1;
+
+    // Rotate clock hands based on the new time zone
+    rotateClockHands(currentTimeZone);
+
+    // Toggle background color
+    toggleBackgroundColor(currentTimeZone);
+});
+
+// Function to rotate clock hands based on time zone
+function rotateClockHands(timeZone) {
     const now = new Date();
-    const hour = now.getHours() % 12;
-    const minute = now.getMinutes();
-    const second = now.getSeconds();
+    const options = { timeZone: timeZone };
+
+    const hour = now.toLocaleString('en-US', { hour: 'numeric', hour12: false, ...options }) % 12;
+    const minute = now.toLocaleString('en-US', { minute: 'numeric', ...options });
+    const second = now.toLocaleString('en-US', { second: 'numeric', ...options });
 
     const hourHand = document.getElementById("hour-hand");
     const minuteHand = document.getElementById("minute-hand");
@@ -63,8 +86,15 @@ function rotateClockHands() {
     secondHand.style.transform = `translate(-50%, -100%) rotate(${secondAngle}deg)`;
 }
 
-// Update clock hands every second
-setInterval(rotateClockHands, 1000);
+// Function to toggle background color based on time zone
+function toggleBackgroundColor(timeZone) {
+    const backgroundColor = (timeZone === timeZone1) ? '#7975A3' : '#FFB23F';
+    clock.style.backgroundColor = backgroundColor;
+}
 
-// Initial call to rotate clock hands immediately
-rotateClockHands();
+const myHome = document.getElementById("myHome");
+
+// Add click event listener
+myHome.addEventListener('click', function() {
+    window.location.href = "index.html";
+});

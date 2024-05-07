@@ -3,6 +3,12 @@ body{
     overflow-y: hidden;
 }
 
+.home img{
+    top: 10px;
+    border-radius: 50%;
+    width: 10em;
+}
+
 .clock{
     font-family: 'Karla', sans-serif;
     font-weight: bold;
