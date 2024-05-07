@@ -186,6 +186,23 @@ body{
   left: 13%;
 }
 
+.title6{
+    transform: rotate(-90deg);
+    position: absolute;
+    padding: 20px;
+    margin: 20px;
+    width: 620px;
+    height: 60px;
+    left: -310px;
+    bottom: 255px;
+}
+
+.author6{
+    font-size: 13px;
+    position: absolute;
+    left: 13%;
+}
+
 .title1 a{
     text-decoration: none;
     color: #791b1e;
@@ -205,6 +222,11 @@ body{
 .title5 a{
     text-decoration: none;
     color: #2e2d2d;
+}
+
+.title6 a{
+    text-decoration: none;
+    color: #010132;
 }
 
 .lover{
@@ -293,6 +315,24 @@ body{
     transform: rotate(-10deg);
 }
 
+.wenlock{
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size: 70px;
+    position: absolute;
+    color: #010132;
+    border-radius: 5px;
+    background-color: #d6c5bf;
+    border: solid;
+    padding: 20px;
+    margin: 20px;
+    bottom: 0;
+    width: 60px;
+    height: 550px;
+    left: 660px;
+    transform: rotate(-15deg);
+}
+
 .lover:hover{
     transform: scale(1.05);
     transition-duration: 500ms;
@@ -317,6 +357,11 @@ body{
     transform: scale(1.05);
     transition-duration: 500ms;
    }
+
+.wenlock:hover{
+    transform: scale(1.05);
+    transition-duration: 500ms;
+}
 
 /* @media (min-width: 1207px) { 
   .breath{
