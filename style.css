@@ -1,5 +1,6 @@
 body{
     background-color: #FFF7EA;
+    overflow-y: hidden;
 }
 
 .clock{
@@ -28,7 +29,7 @@ body{
     position: absolute;
     width: 600px;
     height: 100%;
-    left: 40%;
+    left: 12%;
     bottom: 2%;
 }
 
@@ -43,7 +44,7 @@ body{
     position: absolute;
     width: 700px;
     height: 100%;
-    left: 40%;
+    left: 25%;
     bottom: 2%;
 }
 
@@ -58,7 +59,7 @@ body{
     position: absolute;
     width: 650px;
     height: 100%;
-    left: 40%;
+    left: 32%;
     bottom: 2%;
 }
 
@@ -73,7 +74,7 @@ body{
     position: absolute;
     width: 550px;
     height: 100%;
-    left: 40%;
+    left: 35%;
     bottom: 2%;
 }
 
@@ -88,7 +89,7 @@ body{
   position: absolute;
   width: 600px;
   height: 100%;
-  left: 40%;
+  left: 15%;
   bottom: 2%;
 }
 
@@ -98,10 +99,31 @@ body{
   left: 12%;
 }
 
+.title1 a{
+    text-decoration: none;
+    color: #791b1e;
+}
+.title2 a{
+    text-decoration: none;
+    color: #490327;
+}
+.title3 a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.title4 a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.title5 a{
+    text-decoration: none;
+    color: #2e2d2d;
+}
+
 .lover{
     font-family: 'Karla', sans-serif;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 100px;
     position: absolute;
     color: #791b1e;
     background-color: #C8AB8C;
@@ -116,7 +138,7 @@ body{
 .crooked{
     font-family: 'Karla', sans-serif;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 95px;
     position: absolute;
     color: #490327;
     background-image: linear-gradient(180deg, #D593AF, #8E3A40);
@@ -132,7 +154,7 @@ body{
 .haifa{
     font-family: 'Karla', sans-serif;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 65px;
     position: absolute;
     color: #ffffff;
     background-color: #222657;
@@ -148,7 +170,7 @@ body{
 .breath{
     font-family: 'Karla', sans-serif;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 67px;
     position: absolute;
     color: #ffffff;
     background-image: linear-gradient(180deg, #352122, #B73E2F);
@@ -164,7 +186,7 @@ body{
 .recitatif{
     font-family: 'Karla', sans-serif;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 100px;
     position: absolute;
     color: #2e2d2d;
     background-image: linear-gradient(180deg, #E6D386, #80754B);
@@ -313,4 +335,22 @@ body{
     transform: rotate(-12deg);
     left: 548px;
   }
+}
+
+.container {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.draggable-note-1 {
+    position: absolute;
+    cursor: grab;
 }
