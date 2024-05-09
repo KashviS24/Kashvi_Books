@@ -14,8 +14,9 @@ body{
     display: flex;
     flex-direction: column;
     font-family: 'Karla', sans-serif;
-    background-color: rgb(231, 231, 231);
-    width: 220px;
+    color: #000000;
+    background-color: #ecfbbf;
+    width: 290px;
     height: auto;
     overflow: auto;
     padding: 15px;
