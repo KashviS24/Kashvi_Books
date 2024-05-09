@@ -1,6 +1,7 @@
 body{
-    background-color: #f6e6cf;
+    /*background-color: #f6e6cf;*/
     overflow-y: hidden;
+    transition: background-color 0.5s ease;
 }
 
 /* .info img{
@@ -496,3 +497,4 @@ body{
     position: absolute;
     cursor: grab;
 }
+
