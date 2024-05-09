@@ -83,6 +83,7 @@ myHome.addEventListener('click', function() {
 });
 
 let currentlyDraggedElement = null;
+let zIndexCounter = 1000;
 
 // Make images draggable
 document.querySelectorAll('.draggable-note-1').forEach(function(image) {
@@ -93,15 +94,14 @@ function makeDraggable(element) {
     let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
     element.addEventListener('mousedown', dragMouseDown);
     element.addEventListener('touchstart', dragTouchStart, { passive: false });
-    element.addEventListener('mouseup', function() { currentlyDraggedElement = null; });
-    element.addEventListener('touchend', function() { currentlyDraggedElement = null; });
 
     function dragMouseDown(e) {
         e.preventDefault();
         // Set the currently dragged element
         currentlyDraggedElement = element;
         // Increase z-index to make the dragged element appear above others
-        element.style.zIndex = 1000;
+        zIndexCounter++;
+        element.style.zIndex = zIndexCounter;
         // get the mouse cursor position at startup:
         pos3 = e.clientX;
         pos4 = e.clientY;
@@ -115,7 +115,8 @@ function makeDraggable(element) {
         // Set the currently dragged element
         currentlyDraggedElement = element;
         // Increase z-index to make the dragged element appear above others
-        element.style.zIndex = 1000;
+        zIndexCounter++;
+        element.style.zIndex = zIndexCounter;
         // get the touch position at startup:
         pos3 = e.touches[0].clientX;
         pos4 = e.touches[0].clientY;
@@ -137,8 +138,6 @@ function makeDraggable(element) {
     }
 
     function closeDragElement() {
-        // Reset z-index when dragging stops
-        element.style.zIndex = '';
         // Clear the currently dragged element reference
         currentlyDraggedElement = null;
         // stop moving when mouse/touch interaction ends:
