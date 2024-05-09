@@ -16,7 +16,7 @@ function setBackgroundBasedOnTimeZone(timeZone) {
 
     // Set clock background color based on the time zone
     const clock = document.getElementById("clock");
-    const clockBackgroundColor = (timeZone === timeZone1) ? '#7975A3' : '#FFB23F';
+    const clockBackgroundColor = (timeZone === timeZone1) ? '#e39aa5' : '#FFB23F';
     clock.style.transition = 'background-color 0.5s ease';
     clock.style.backgroundColor = clockBackgroundColor;
 }
