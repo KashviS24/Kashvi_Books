@@ -13,13 +13,21 @@ body{
     justify-content: center;
     display: flex;
     flex-direction: column;
-    font-family: 'Karla', sans-serif;
     color: #000000;
     background-color: #ecfbbf;
     width: 290px;
     height: 440px;
     overflow: auto;
     padding: 15px;
+}
+
+.about h1 {
+    font-family: 'Karla', sans-serif;
+    align-self: flex-start;
+    margin-top: 0;
+}
+.about a{
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /* .info img{
