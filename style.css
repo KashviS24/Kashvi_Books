@@ -4,6 +4,23 @@ body{
     transition: background-color 0.5s ease;
 }
 
+.about{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Karla', sans-serif;
+    background-color: rgb(231, 231, 231);
+    width: 220px;
+    height: auto;
+    overflow: auto;
+    padding: 15px;
+}
+
 /* .info img{
     cursor: help;
     position: fixed;
@@ -32,7 +49,6 @@ body{
     transform: scale(1.3);
     transition-duration: 500ms;
 }
-
 
 .note-here{
     position:fixed;
